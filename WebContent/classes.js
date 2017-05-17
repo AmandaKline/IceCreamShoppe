@@ -32,3 +32,8 @@ Item.method('getName', function() {
 Item.method('toString', function() {
 	return this.getName() + " " + this.getPrice();
 })
+
+//-----------------TEST CODE--------------------
+myItem = new Item(true, 2.25, "icecream");
+var label = myItem.toString()
+document.getElementById("test").innerHTML= label;
