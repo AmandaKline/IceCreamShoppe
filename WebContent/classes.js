@@ -35,5 +35,6 @@ Item.method('toString', function() {
 
 //-----------------TEST CODE--------------------
 myItem = new Item(true, 2.25, "icecream");
-var label = myItem.toString()
-document.getElementById("test").innerHTML= label;
+var label = myItem.toString();
+document.write(label);
+document.getElementById("test").textContent = label;
